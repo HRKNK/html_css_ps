@@ -1,0 +1,103 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+header > ul {
+	border-bottom: 1px #f0f0f0 solid;
+
+	padding-left: 0;
+	/* выравнивает отступ для маркеров */
+	list-style-position: inside;
+	/* Скрыть отображение маркеров в списке */
+	list-style-type: none;
+
+	display: flex;
+	flex-direction: row;
+	gap: 34px;
+}
+
+header > ul a {
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #050038;
+}
+
+h1,
+h2 {
+	font-size: 48px;
+	color: #050038;
+}
+
+#heroButton {
+	background-color: #4262ff;
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+section p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+a,
+p,
+button,
+h1,
+h2 {
+	font-weight: 400;
+}
+
+.bodyLink {
+	color: #4262ff;
+	border-bottom: 1.5px #4262ff solid;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+#mainForm > input,
+#mainForm > button {
+	border: 1px solid #9b99af;
+	border-radius: 32px;
+	width: 440px;
+	height: 48px;
+	padding: 5px 15px;
+}
+
+#mainForm + p {
+	font-size: 14px;
+	line-height: 20px;
+	color: #050038;
+}
+
+#mainForm > button {
+	font-size: 18px;
+	line-height: 27px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.heroText {
+	color: #050038;
+}
+
+.sectionText {
+	color: #05003899;
+}
+
+footer {
+	background: #050038;
+	color: #fff;
+}
+
+footer a {
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+}

@@ -1,0 +1,29 @@
+/* all селектор */
+* {
+	box-sizing: border-box;
+}
+
+ol,
+ul {
+	padding-left: 0;
+	/* выравнивает отступ для маркеров */
+	list-style-position: inside;
+	/* Скрыть отображение маркеров в списке */
+	list-style-type: none;
+}
+
+h1 {
+	/* Размер шрифта */
+	font-size: 24px;
+	/* Ширина линиии / между строк / величина строки */
+	line-height: 6px;
+	/* Ширина шрифта (жирность) */
+	font-weight: bold;
+	/* Стиль шрифта */
+	font-style: normal;
+
+	/* Семейство шрифта (далее альтернативные) */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	/* Оформление текста в виде его подчеркивания */
+	text-decoration: underline;
+}
