@@ -1,5 +1,6 @@
 * {
 	font-family: 'Roboto', sans-serif;
+	/* Как считать ширину элемента / Внутрь|Снаружи (border) */
 	box-sizing: border-box;
 	margin: 0;
 }
@@ -25,6 +26,23 @@ header > ul a {
 	color: #050038;
 }
 
+.sectionList {
+	/*  Комбинация  */
+	/* list-style: square url() outside; */
+
+	/* Cтиль маркеров */
+	list-style-type: none;
+	/* Cсылка на изображение */
+	list-style-image: url('../image/check_frame.svg');
+	/* Позиционирование (внутри, снаружи) */
+	list-style-position: outside;
+}
+
+/* Альтернативная реализация стилей маркера */
+/* .sectionList li::before {
+	content: url('../image/check_frame.svg');
+} */
+
 h1,
 h2 {
 	font-size: 48px;
@@ -42,6 +60,7 @@ a {
 
 section p {
 	font-size: 18px;
+	/* высота строки */
 	line-height: 24px;
 }
 
@@ -57,6 +76,7 @@ h2 {
 	color: #4262ff;
 	border-bottom: 1.5px #4262ff solid;
 	font-size: 18px;
+	/* высота строки */
 	line-height: 24px;
 }
 
@@ -71,12 +91,14 @@ h2 {
 
 #mainForm + p {
 	font-size: 14px;
+	/* высота строки */
 	line-height: 20px;
 	color: #050038;
 }
 
 #mainForm > button {
 	font-size: 18px;
+	/* высота строки */
 	line-height: 27px;
 	text-align: center;
 	color: #ffffff;
@@ -98,6 +120,7 @@ footer {
 footer a {
 	color: #fff;
 	font-size: 16px;
+	/* высота строки */
 	line-height: 24px;
 	text-align: center;
 }

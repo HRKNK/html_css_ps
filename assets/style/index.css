@@ -3,6 +3,19 @@
 	box-sizing: border-box;
 }
 
+.test {
+	background-color: aqua;
+	width: 400px;
+	height: 100px;
+	overflow: hidden;
+}
+
+#test {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 ol,
 ul {
 	padding-left: 0;
@@ -15,7 +28,7 @@ ul {
 h1 {
 	/* Размер шрифта */
 	font-size: 24px;
-	/* Ширина линиии / между строк / величина строки */
+	/* Ширина линиии / между строк / высота строки */
 	line-height: 6px;
 	/* Ширина шрифта (жирность) */
 	font-weight: bold;
