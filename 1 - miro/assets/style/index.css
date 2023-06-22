@@ -5,10 +5,39 @@
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
+h1 {
+	margin: 0;
+}
+
+h1,
+h2 {
+	font-size: 48px;
+	color: #050038;
+	margin-bottom: 18px;
+}
+
+section p {
+	font-size: 18px;
+	/* высота строки */
+	line-height: 24px;
+	margin-bottom: 40px;
+}
+
+p,
+button,
+h1,
+h2 {
+	font-weight: 400;
+}
+
 header > ul {
 	border-bottom: 1px #f0f0f0 solid;
 
-	padding-left: 0;
+	/* padding-left: 0; */
 	/* выравнивает отступ для маркеров */
 	list-style-position: inside;
 	/* Скрыть отображение маркеров в списке */
@@ -17,6 +46,9 @@ header > ul {
 	display: flex;
 	flex-direction: row;
 	gap: 34px;
+
+	margin: 0px 0 60px;
+	padding: 34px 50px;
 }
 
 header > ul a {
@@ -24,6 +56,32 @@ header > ul a {
 	line-height: 24px;
 	text-align: center;
 	color: #050038;
+}
+
+header > ul a:active,
+header > ul a:hover {
+	color: #727272;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	background: #050038;
+	color: #fff;
+	font-size: 16px;
+	/* высота строки */
+	line-height: 24px;
+	text-align: center;
+	gap: 20px;
+	padding: 46px 58px;
+}
+
+footer > a:active, /* активная/посещенная ссылка */
+footer > a:hover,  /* при наведении */
+footer > a {
+	font-weight: 400;
+	text-decoration: none;
+	color: #fff;
 }
 
 .sectionList {
@@ -43,33 +101,9 @@ header > ul a {
 	content: url('../image/check_frame.svg');
 } */
 
-h1,
-h2 {
-	font-size: 48px;
-	color: #050038;
-}
-
 #heroButton {
 	background-color: #4262ff;
 	color: #fff;
-}
-
-a {
-	text-decoration: none;
-}
-
-section p {
-	font-size: 18px;
-	/* высота строки */
-	line-height: 24px;
-}
-
-a,
-p,
-button,
-h1,
-h2 {
-	font-weight: 400;
 }
 
 .bodyLink {
@@ -84,9 +118,10 @@ h2 {
 #mainForm > button {
 	border: 1px solid #9b99af;
 	border-radius: 32px;
-	width: 440px;
+	/* width: 440px; */
 	height: 48px;
 	padding: 5px 15px;
+	margin: 9px 0;
 }
 
 #mainForm + p {
@@ -94,6 +129,7 @@ h2 {
 	/* высота строки */
 	line-height: 20px;
 	color: #050038;
+	margin-bottom: 52px;
 }
 
 #mainForm > button {
@@ -110,17 +146,4 @@ h2 {
 
 .sectionText {
 	color: #05003899;
-}
-
-footer {
-	background: #050038;
-	color: #fff;
-}
-
-footer a {
-	color: #fff;
-	font-size: 16px;
-	/* высота строки */
-	line-height: 24px;
-	text-align: center;
 }
