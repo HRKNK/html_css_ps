@@ -71,6 +71,10 @@ CSS свойства:
 		* inline - поведение строки (span, a, img, input),
 		* inline-block - находится в строке, но ведет себя как блок,
 
+- text-align: justify (межстрочное выравнивание текста/книжная верстка)
+
+- vh - viewport height - 
+- vw - viewport width -
 - width - ширина
 - heigth - высота
 

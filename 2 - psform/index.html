@@ -5,35 +5,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="./assets/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<main>
 			<h1>Свяжитесь со мной</h1>
 			<form action="#">
-				<div>
-					<label>
-						E-mail*
-						<input name="email" placeholder="Введите email" type="email" />
-					</label>
+				<div class="field">
+					<label class="label_email" for="email">E-mail*</label>
+					<input id="email" name="email" placeholder="Введите email" type="email" />
 				</div>
-				<div>
-					<label>
-						Telegtam
-						<input type="text" name="telegtam" placeholder="Введите свой telegtam" />
-					</label>
+				<div class="field">
+					<label class="label_telegram" for="telegram">Telegram</label>
+					<input id="telegram" type="text" name="telegram" placeholder="Введите свой telegram" />
 				</div>
-				<div>
-					<label>
-						Тема*
-						<input type="text" name="theme" placeholder="Введите тему" />
-					</label>
+				<div class="field">
+					<label class="label_theme" for="theme">Тема*</label>
+					<input id="theme" type="text" name="theme" placeholder="Введите тему" />
 				</div>
-				<div>
-					<label>
-						Комментарий
-						<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-					</label>
+				<div class="field">
+					<label class="label_comment" for="comment"> Комментарий </label>
+					<textarea id="comment" name="comment" id="comment" cols="30" rows="10"></textarea>
 				</div>
+				<button type="button">Отправить</button>
 			</form>
 		</main>
 	</body>
