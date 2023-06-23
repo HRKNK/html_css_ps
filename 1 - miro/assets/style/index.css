@@ -104,6 +104,15 @@ footer > a {
 #heroButton {
 	background-color: #4262ff;
 	color: #fff;
+	/* Анимированный переход/анимация. 
+		Что анимировать + длительность анимации + задержка старта + функция расчета анимации */
+	transition: background-color 1s 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#heroButton:hover {
+	background-color: #12c3ae;
+	border-color: #1a2f98;
+	color: #fff;
 }
 
 .bodyLink {
