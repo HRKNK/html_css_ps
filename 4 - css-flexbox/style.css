@@ -1,0 +1,213 @@
+* {
+	/* Учёт всех бордер оступов при позиционировании */
+	box-sizing: border-box;
+}
+
+body {
+	background: #1c1b21;
+	color: #fafafa;
+	font-size: 35px;
+	font-family: 'Fira Sans', sans-serif;
+	margin: 0 auto;
+}
+
+.container {
+	border: 10px solid #6c38cc;
+	/* добавить внутренний скролл */
+	overflow: auto;
+	height: 500px;
+	/* flex - способ позиционирования элементов */
+	display: flex;
+	/* flex-direction - направление расположения флекс айтемов / основной оси 
+        (column, row, row-reverse, column-reverse) или "основная ось" */
+	/* флекс айтем - все дочерние элементы флекс родителя */
+	flex-direction: row;
+	/* перенос флекс айтемов */
+	flex-wrap: wrap;
+	/* Представляет из себя комбинацию flex-wrap и flex-direction */
+	/* flex-flow: ; */
+}
+
+.item {
+	background: #232228;
+	border: 1px solid #6c38cc;
+	text-align: center;
+	/* 50% ширина каждого элемента */
+	width: calc(100% / 2);
+	padding: 10px;
+}
+
+/* Порядок элементов (п.с. несет за собой некорректное текстовыделение) */
+.item1 {
+	order: 1;
+}
+.item2 {
+	order: 2;
+}
+
+.container_2 {
+	border: 10px solid #6c38cc;
+	height: 300px;
+	/* добавить внутренний скролл */
+	overflow: auto;
+	/* flex контейнер - способ позиционирования элементов */
+	display: flex;
+	/* flex-direction - направление расположения флекс айтемов по оси (column, row, row-reverse, column-reverse) */
+	flex-direction: row;
+
+	/* Распределение элементов по основной оси X */
+	justify-content: center;
+	/* flex-end , flex-start - центрирует по краям оси */
+	/* space-between растянет по всей оси с равными отступами между айтемами */
+	/* space-evenly растянет по всей оси с равными отступами между айтемами с учетом края */
+
+	/* Распределение элементов по дополнительной оси оси Y (одной строки) */
+	align-items: center;
+	/* flex-end , flex-start - центрирует по краям оси */
+	/* baseline - выстраивает флекс айтемы в одну линию (независимо от высоты самих айтемов) */
+
+	/* Распределение ВСЕГО КОНТЕНТА (захватив все флекс айтемы) по дополнительной оси Y */
+	align-content: center;
+}
+
+.item_2 {
+	background: #232228;
+	border: 1px solid #6c38cc;
+	text-align: center;
+	padding: 10px;
+	/* width: calc(100%/3); */
+
+	/* align-self: flex-end; */
+}
+
+.container_3 {
+	border: 10px solid #6c38cc;
+	height: 100vh;
+	/* добавить внутренний скролл */
+	overflow: auto;
+	/* flex контейнер - способ позиционирования элементов */
+	display: flex;
+	/* flex-direction - направление расположения флекс айтемов по оси (column, row, row-reverse, column-reverse) */
+	flex-direction: column;
+	/* перенос флекс айтемов */
+	flex-wrap: wrap;
+
+	/* Распределение элементов по основной оси X */
+	justify-content: flex-start;
+	/* flex-end , flex-start - центрирует по краям оси */
+	/* space-between растянет по всей оси с равными отступами между айтемами */
+	/* space-evenly растянет по всей оси с равными отступами между айтемами с учетом края */
+}
+
+.item_3 {
+	background: #232228;
+	border: 1px solid #6c38cc;
+	text-align: center;
+	padding: 10px;
+	/* Управление свободным пространством */
+	/* Работает в рамках одной строки или колонки */
+	flex-grow: 1;
+
+	/* Базовая ширина флекс айтема */
+	flex-basis: 300px;
+
+	/* Короткое свойство включает: flex-grow, flex-shrink, flex-basis */
+	/* flex: 1 1 300px  */
+}
+
+.item_3_1 {
+	/* Пропорция из всего объема оси */
+	/* flex: 1; */
+	/* Управление свободным пространством */
+	/* flex-grow: 1; */
+	/* Насколько сжать элемент относительно соседнего */
+	/* flex-shrink: 1; */
+}
+
+.item_3_2 {
+	/* Пропорция из всего объема оси */
+	/* flex: 1; */
+	/* Управление свободным пространством */
+	/* flex-grow: 5; */
+	/* Насколько сжать элемент относительно соседнего */
+	/* flex-shrink: 5; */
+}
+
+.container_4 {
+	border: 10px solid #6c38cc;
+	/* добавить внутренний скролл */
+	overflow: auto;
+	/* flex контейнер - способ позиционирования элементов */
+	display: flex;
+	/* flex-direction - направление расположения флекс айтемов по оси (column, row, row-reverse, column-reverse) */
+	flex-direction: row;
+	/* перенос флекс айтемов */
+	flex-wrap: wrap;
+
+	/* Распределение элементов по основной оси X */
+	justify-content: flex-start;
+	/* flex-end , flex-start - центрирует по краям оси */
+	/* space-between растянет по всей оси с равными отступами между айтемами */
+	/* space-evenly растянет по всей оси с равными отступами между айтемами с учетом края */
+}
+
+.item_4 {
+	background: #232228;
+	border: 1px solid #6c38cc;
+	text-align: center;
+	padding: 10px;
+	/* Управление свободным пространством */
+	/* Работает в рамках одной строки или колонки */
+	/* flex-grow: 1; */
+
+	/* Базовая ширина флекс айтема
+    flex-basis: 300px; */
+
+	/* Короткое свойство включает: flex-grow, flex-shrink, flex-basis */
+	/* flex: 1 1 300px  */
+}
+
+.item_4_1 {
+	/* Раздвинуть блок направо оставив свободное место от айтема */
+	margin-right: auto;
+}
+
+.container_5 {
+	border: 10px solid #6c38cc;
+	/* добавить внутренний скролл */
+	overflow: auto;
+	/* flex контейнер - способ позиционирования элементов */
+	display: flex;
+	/* flex-direction - направление расположения флекс айтемов по оси (column, row, row-reverse, column-reverse) */
+	flex-direction: row;
+	/* перенос флекс айтемов */
+	flex-wrap: wrap;
+
+	/* Отступ по вертикали и горизонтали */
+	gap: 10px 10px;
+}
+
+.item_5 {
+	background: #232228;
+	border: 1px solid #6c38cc;
+	text-align: center;
+	padding: 10px;
+
+	/* Управление свободным пространством */
+	/* Работает в рамках одной строки или колонки */
+	flex-grow: 0;
+
+	/* Насколько сжать элемент относительно соседнего */
+	flex-shrink: 1;
+
+	/* Базовая ширина флекс айтема: 5 айтемов в колонке - 4 отступа между ними */
+	flex-basis: calc((100% / 5) - (10px * 4 / 5));
+}
+
+.container_6 {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

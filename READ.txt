@@ -2,6 +2,9 @@
 - https://symbl.cc/en/html-entities/ | https://www.freeformatter.com/html-entities.html - Сущности HTML 
 - https://caniuse.com/ - проверка совместимости свойств с браузерами
 
+SMACSS - методология по слоям
+БЭМ - методология по модулям/компонентам
+
 - <h1> - только один заголовок первого уровня на всю страницу, необходим для корректного чтения роботами/скринридером 
 		далее: h2, h3
 
@@ -38,7 +41,7 @@
 - pages содержат artboard-ы (frame) состоящие из блоков (слои)
 
 Частые псевдоклассы:
-		:hover, focus, active, valid, invalid, first-child, last-child, nth-child
+		:hover, focus, active, valid, invalid, first-child, last-child, nth-child, root
 
 Частые псевдоэлементы (стилизация части элемента):
 		::before, after, cue, selection (выделение текста)
@@ -94,3 +97,11 @@ position: позиционирование элемента в потоке
 		"НЕ оставляет/теряет за собой зарезервированное место"
 	- fixed - только относительно окна браузера. Игнорирует позиционирование родителя (отличие с absolute)
 	- sticky - (липкий) - комбинация fixed и relative.
+
+
+Custom Properties: (кастомное свойство и альтернация)
+	background: var(--color-primary, red);
+	
+	body {
+		--color-primary: 
+	}

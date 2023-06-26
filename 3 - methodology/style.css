@@ -1,0 +1,11 @@
+:root {
+	--color-primary: #6c38cc;
+}
+
+body {
+	background-color: #2e2d3d;
+}
+
+.button_primary {
+	background: var(--color-primary, red);
+}
