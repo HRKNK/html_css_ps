@@ -1,0 +1,93 @@
+:root {
+	--primary: #5500e9;
+	--mainFont: #2d2e3a;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	color: white;
+	font-weight: 400;
+	font-style: normal;
+	margin: 30px;
+	background-color: var(--mainFont);
+}
+
+.item {
+	color: var(--primary);
+	font-weight: 700;
+	font-size: 24px;
+	padding: 15px;
+	border: 2px solid var(--primary);
+	text-align: center;
+}
+
+.wrapper {
+	display: grid;
+	/* Шаблон */
+	/* Шаблон колонок|ширина */
+	grid-template-columns: 100px 100px;
+	/* Шаблон строк|высота */
+	grid-template-rows: 100px 100px;
+
+	/* Вне шаблона */
+	/* Высота каждой строки */
+	grid-auto-rows: 100px;
+	/* Отступы между * */
+	gap: 15px;
+}
+
+.wrapper_2 {
+	display: grid;
+	/* Шаблон */
+	/* Шаблон колонок|ширина */
+	grid-template-columns: 100px 100px;
+
+	/* Поведение перетекания */
+	/* По колонкам */
+	grid-auto-flow: column;
+	/* Отступы между * */
+	gap: 15px;
+}
+
+.wrapper_3 {
+	display: grid;
+	/* Шаблон */
+	/* Шаблон колонок|ширина (фиксированный) */
+	/* grid-template-columns: 1fr 2fr 1fr; */
+	grid-template-columns: repeat(3, 2fr);
+	grid-template-rows: repeat(3 1fr);
+
+	/* Отступы между * */
+	gap: 15px;
+}
+
+.wrapper_4 {
+	display: grid;
+	/* Шаблон */
+	/* Шаблон колонок|ширина (фиксированный) */
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+
+	/* Отступы между * */
+	gap: 15px;
+}
+
+.item_10 {
+	/* Работает с переносом */
+	/* Этот элемент занимает две колонки */
+	/* grid-column: span 2; */
+	/* Этот элемент занимает две строки */
+	/* grid-row: span 2; */
+
+	/* Откуда колонка начинается (линия) */
+	grid-row-start: 1;
+	/* Откуда колонка заканчивается (линия) */
+	grid-row-end: -1;
+}

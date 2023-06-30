@@ -11,58 +11,102 @@
 	<body>
 		<header>
 			<!-- Это nav! -->
-			<ul>
-				<li><a href="">Продукт</a></li>
-				<li><a href="">Решения</a></li>
-				<li><a href="">Ресурсы</a></li>
-				<li><a href="">Предприятия</a></li>
-				<li><a href="">Тарифы</a></li>
-			</ul>
+			<nav>
+				<ul>
+					<li><a href="">Продукт</a></li>
+					<li><a href="">Решения</a></li>
+					<li><a href="">Ресурсы</a></li>
+					<li><a href="">Предприятия</a></li>
+					<li><a href="">Тарифы</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main>
-			<section>
-				<h1>Место для командной работы</h1>
-				<p class="heroText">Интерактивная онлайн-доска для совместной работы команд — в любое время, в любом месте.</p>
-				<form id="mainForm" method="get" action="#">
-					<input placeholder="enter email" type="email" />
-					<button id="heroButton" type="button">Начать бесплатно</button>
-				</form>
-				<p>Всегда бесплатно — кредитная карта не нужна</p>
-				<img src="./assets/image/headerimage-without-text 1.jpg" alt="Изображение" />
+			<section class="content">
+				<div>
+					<h1>Место для командной работы</h1>
+					<p class="heroText">Интерактивная онлайн-доска для совместной работы команд — в любое время, в любом месте.</p>
+					<form id="mainForm" method="get" action="#">
+						<input placeholder="enter email" type="email" />
+						<button id="heroButton" type="button">Начать бесплатно</button>
+					</form>
+					<p>Всегда бесплатно — кредитная карта не нужна</p>
+					<div class="heroLogos">
+						45M+ пользователей
+						<img src="./assets/image/logos.jpg" alt="" />
+					</div>
+				</div>
+				<div>
+					<img src="./assets/image/headerimage-without-text 1.jpg" alt="Изображение" />
+				</div>
 			</section>
-			<section>
-				<h2>Работайте вместе, где бы вы ни находились</h2>
-				<p class="sectionText">
-					Работая в офисе, удалённо или в гибридном формате, с Miro ваша команда может общаться, сотрудничать и совместно заниматься творчеством в
-					одном пространстве, из любой точки мира.
-				</p>
-				<a href="#" class="bodyLink" target="_blank" rel="noopener noreferrer">Узнать больше</a>
-				<img src="./assets/image/IMAGE.jpg" alt="Изображение" />
+			<section class="content">
+				<div>
+					<h2>Работайте вместе, где бы вы ни находились</h2>
+					<p class="sectionText">
+						Работая в офисе, удалённо или в гибридном формате, с Miro ваша команда может общаться, сотрудничать и совместно заниматься творчеством в
+						одном пространстве, из любой точки мира.
+					</p>
+					<a href="#" class="bodyLink" target="_blank" rel="noopener noreferrer">Узнать больше</a>
+				</div>
+				<div>
+					<img src="./assets/image/IMAGE.jpg" alt="Изображение" />
+				</div>
 			</section>
-			<section>
-				<img src="./assets/image/IMAGE_2.jpg" alt="Изображение" />
-				<h2>Закройте лишние вкладки — всё уже здесь</h2>
-				<p class="sectionText">
-					Редактируете ли вы документы в Google Docs, работаете над задачами в Jira или созваниваетесь в Zoom, Miro предлагает более 100 интеграций с
-					уже известными и полюбившимися вам инструментами.
-				</p>
-				<a href="#" class="bodyLink" target="_blank" rel="noopener noreferrer">Узнать больше</a>
+			<section class="content">
+				<div>
+					<img src="./assets/image/IMAGE_2.jpg" alt="Изображение" />
+				</div>
+				<div>
+					<h2>
+						Закройте лишние вкладки — всё<br />
+						уже здесь
+					</h2>
+					<p class="sectionText">
+						Редактируете ли вы документы в Google Docs, работаете над задачами в Jira или созваниваетесь в Zoom, Miro предлагает более 100 интеграций
+						с уже известными и полюбившимися вам инструментами.
+					</p>
+					<a href="#" class="bodyLink" target="_blank" rel="noopener noreferrer">Узнать больше</a>
+				</div>
 			</section>
-			<section>
+			<section class="lastContent">
 				<h2>Создан для всех типов команд</h2>
-				<ol class="sectionList">
-					<li>Создавайте вайрфреймы</li>
-					<li>Подключайте заказчиков к процессу дизайна</li>
-					<li>Проводите вовлекающие дизайн-воркшопы</li>
-				</ol>
-				<a href="#" class="bodyLink" target="_blank" rel="noopener noreferrer">Узнать больше</a>
+				<div class="lastContent__nav">
+					<button class="lastContent__active" type="button">UX и дизайн</button>
+					<button type="button">Маркетинг</button>
+					<button type="button">Управление продуктом</button>
+					<button type="button">Разработка</button>
+					<button type="button">Консалтинг</button>
+					<button type="button">Agile-коучинг</button>
+					<button type="button">Продажи</button>
+				</div>
+
+				<div class="lastContent__main">
+					<div>
+						<ol class="sectionList">
+							<li>Создавайте вайрфреймы</li>
+							<li>Подключайте заказчиков к <br />процессу дизайна</li>
+							<li>Проводите вовлекающие <br />дизайн-воркшопы</li>
+						</ol>
+						<a href="#" class="bodyLink" target="_blank" rel="noopener noreferrer">Узнать больше</a>
+						<div>
+							<p>Интегрируйте ваши любимые <br />инструменты</p>
+							<img src="./assets/image/tools.jpg" alt="" />
+						</div>
+					</div>
+					<div>
+						<img src="./assets/image/UI.jpg" alt="" />
+					</div>
+				</div>
 			</section>
 		</main>
 		<footer>
-			<span>&#169; 2023 Miro</span>
-			<a href="">Условия пользования</a>
-			<a href="">Политика конфиденциальности</a>
-			<a href="">Управление файлами cookies</a>
+			<div>
+				<span>&#169; 2023 Miro</span>
+				<a href="">Условия пользования</a>
+				<a href="">Политика конфиденциальности</a>
+				<a href="">Управление файлами cookies</a>
+			</div>
 		</footer>
 	</body>
 </html>

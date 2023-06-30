@@ -15,7 +15,7 @@ body {
 	border: 10px solid #6c38cc;
 	/* добавить внутренний скролл */
 	overflow: auto;
-	height: 500px;
+	height: 100vh;
 	/* flex - способ позиционирования элементов */
 	display: flex;
 	/* flex-direction - направление расположения флекс айтемов / основной оси 
@@ -47,7 +47,7 @@ body {
 
 .container_2 {
 	border: 10px solid #6c38cc;
-	height: 300px;
+	height: 100vh;
 	/* добавить внутренний скролл */
 	overflow: auto;
 	/* flex контейнер - способ позиционирования элементов */
@@ -134,6 +134,7 @@ body {
 }
 
 .container_4 {
+	height: 100vh;
 	border: 10px solid #6c38cc;
 	/* добавить внутренний скролл */
 	overflow: auto;
@@ -173,6 +174,7 @@ body {
 }
 
 .container_5 {
+	height: 100vh;
 	border: 10px solid #6c38cc;
 	/* добавить внутренний скролл */
 	overflow: auto;
@@ -182,7 +184,6 @@ body {
 	flex-direction: row;
 	/* перенос флекс айтемов */
 	flex-wrap: wrap;
-
 	/* Отступ по вертикали и горизонтали */
 	gap: 10px 10px;
 }
@@ -191,23 +192,36 @@ body {
 	background: #232228;
 	border: 1px solid #6c38cc;
 	text-align: center;
-	padding: 10px;
 
 	/* Управление свободным пространством */
 	/* Работает в рамках одной строки или колонки */
 	flex-grow: 0;
-
 	/* Насколько сжать элемент относительно соседнего */
 	flex-shrink: 1;
-
-	/* Базовая ширина флекс айтема: 5 айтемов в колонке - 4 отступа между ними */
-	flex-basis: calc((100% / 5) - (10px * 4 / 5));
+	/* Базовая ширина флекс айтема: (gap * число промежутков / число элементов) */
+	flex-basis: calc((100% / 3) - (10px * 2 / 3));
 }
 
 .container_6 {
+	border: 10px solid #6c38cc;
+
 	height: 100vh;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	flex-wrap: wrap;
+}
+
+.item_6 {
+	background: #232228;
+	border: 1px solid #6c38cc;
+	text-align: center;
+	padding: 10px;
+	/* width: calc(100% / 3); */
+
+	/* Управление свободным пространством */
+	/* Работает в рамках одной строки или колонки */
+	flex-grow: 1;
+	/* Насколько сжать элемент относительно соседнего */
+	flex-shrink: 1;
+	/* Базовая ширина флекс айтема: ширина / 3 */
+	flex-basis: calc(100% / 3);
 }

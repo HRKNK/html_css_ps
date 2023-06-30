@@ -9,8 +9,10 @@ a {
 	text-decoration: none;
 }
 
-h1 {
-	margin: 0;
+main,
+footer > div {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 h1,
@@ -27,6 +29,71 @@ section p {
 	margin-bottom: 40px;
 }
 
+section.content {
+	display: flex;
+	justify-content: space-between;
+	gap: 60px;
+	margin: 60px 40px 120px 40px;
+}
+
+section.lastContent {
+	margin: 60px 40px 40px 40px;
+}
+
+div.lastContent__nav button {
+	border-radius: 24px;
+	border: 1px solid #f2f2f2;
+	background: #fff;
+	color: #050038;
+	font-size: 14px;
+	font-family: Roboto;
+	line-height: 20px;
+	padding: 14px 18px;
+}
+
+div.lastContent__nav > button.lastContent__active {
+	background: #f2f2f2;
+}
+
+section.lastContent > div.lastContent__nav {
+	display: flex;
+	gap: 8px;
+	margin: 35px 0;
+}
+
+section.lastContent > div.lastContent__main {
+	display: flex;
+	justify-content: center;
+	gap: 60px;
+}
+
+div.lastContent__main > div > a {
+	border: none;
+	margin: 70px 0;
+}
+
+div.lastContent__main p {
+	color: rgba(5, 0, 56, 0.6);
+	font-size: 18px;
+	font-family: Roboto;
+	line-height: 24px;
+	letter-spacing: 0.25px;
+	margin: 70px 0 13px;
+}
+
+section:nth-child(2),
+section:nth-child(3) {
+	align-items: center;
+}
+
+section > div {
+	flex-basis: 430px;
+}
+
+img {
+	height: auto;
+}
+
 p,
 button,
 h1,
@@ -34,9 +101,16 @@ h2 {
 	font-weight: 400;
 }
 
-header > ul {
-	border-bottom: 1px #f0f0f0 solid;
+nav {
+	max-width: 1200px;
+	margin: 0 auto;
+}
 
+header {
+	border-bottom: 1px #f0f0f0 solid;
+}
+
+header > nav > ul {
 	/* padding-left: 0; */
 	/* выравнивает отступ для маркеров */
 	list-style-position: inside;
@@ -47,26 +121,27 @@ header > ul {
 	flex-direction: row;
 	gap: 34px;
 
-	margin: 0px 0 60px;
 	padding: 34px 50px;
 }
 
-header > ul a {
+header > nav > ul a {
 	font-size: 16px;
 	line-height: 24px;
 	text-align: center;
 	color: #050038;
 }
 
-header > ul a:active,
-header > ul a:hover {
+header > nav > ul a:active,
+header > nav > ul a:hover {
 	color: #727272;
 }
 
 footer {
+	background: #050038;
+}
+footer > div {
 	display: flex;
 	flex-direction: row;
-	background: #050038;
 	color: #fff;
 	font-size: 16px;
 	/* высота строки */
@@ -76,24 +151,37 @@ footer {
 	padding: 46px 58px;
 }
 
-footer > a:active, /* активная/посещенная ссылка */
-footer > a:hover,  /* при наведении */
-footer > a {
+footer > div > a:active, /* активная/посещенная ссылка */
+footer > div > a:hover,  /* при наведении */
+footer > div > a {
 	font-weight: 400;
 	text-decoration: none;
 	color: #fff;
 }
 
+.sectionList > li {
+	margin-bottom: 11px;
+}
+
 .sectionList {
+	position: relative;
+	margin: 23px 0 32px;
+
+	color: rgba(5, 0, 56, 0.6);
+	font-size: 18px;
+	font-family: Roboto;
+	line-height: 23px;
+
 	/*  Комбинация  */
 	/* list-style: square url() outside; */
-
 	/* Cтиль маркеров */
 	list-style-type: none;
 	/* Cсылка на изображение */
 	list-style-image: url('../image/check_frame.svg');
 	/* Позиционирование (внутри, снаружи) */
 	list-style-position: outside;
+	/* выравнивает отступ для маркеров */
+	padding-left: 26px;
 }
 
 /* Альтернативная реализация стилей маркера */
@@ -115,6 +203,12 @@ footer > a {
 	color: #fff;
 }
 
+.heroLogos {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
 .bodyLink {
 	color: #4262ff;
 	border-bottom: 1.5px #4262ff solid;
@@ -125,12 +219,13 @@ footer > a {
 
 #mainForm > input,
 #mainForm > button {
+	width: 100%;
 	border: 1px solid #9b99af;
 	border-radius: 32px;
 	/* width: 440px; */
 	height: 48px;
 	padding: 5px 15px;
-	margin: 9px 0;
+	margin: 5px 0;
 }
 
 #mainForm + p {
@@ -138,6 +233,7 @@ footer > a {
 	/* высота строки */
 	line-height: 20px;
 	color: #050038;
+	margin-top: 4px;
 	margin-bottom: 52px;
 }
 
