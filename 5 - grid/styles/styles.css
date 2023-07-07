@@ -5,6 +5,7 @@
 
 * {
 	box-sizing: border-box;
+	margin: 0;
 }
 
 html {
@@ -17,6 +18,10 @@ body {
 	font-style: normal;
 	margin: 30px;
 	background-color: var(--mainFont);
+}
+
+body > div {
+	margin-bottom: 15px;
 }
 
 .item {
@@ -79,7 +84,7 @@ body {
 	gap: 15px;
 }
 
-.item_10 {
+.wrapper_4 > .item_10 {
 	/* Работает с переносом */
 	/* Этот элемент занимает две колонки */
 	/* grid-column: span 2; */
@@ -90,4 +95,23 @@ body {
 	grid-row-start: 1;
 	/* Откуда колонка заканчивается (линия) */
 	grid-row-end: -1;
+}
+
+.wrapper_5 {
+	display: grid;
+	/* Наименование линий */
+	grid-template-columns: [s-left] 200px 200px [s-center] 1fr [s-center] 1fr [s-right];
+	gap: 15px;
+}
+
+.wrapper_5 > .item_1 {
+	/* Занимает с 1 по 3 линию */
+	grid-column: 1 / 3;
+}
+
+.wrapper_6 {
+	display: grid;
+	/* auto-fill - подбирает кол-во колонок под разрешение (адаптив) */
+	grid-template-columns: repeat(auto-fill, 200px);
+	gap: 15px;
 }
