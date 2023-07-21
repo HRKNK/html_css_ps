@@ -10,6 +10,8 @@
 
 html {
 	text-rendering: optimizeLegibility;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 body {
@@ -111,7 +113,133 @@ body > div {
 
 .wrapper_6 {
 	display: grid;
-	/* auto-fill - подбирает кол-во колонок под разрешение (адаптив) */
-	grid-template-columns: repeat(auto-fill, 200px);
+	/* auto-fill - подбирает кол-во grid-линий под разрешение (адаптив) */
+	/* auto-fit - подбирает кол-во grid-линий под кол-во контента */
+	grid-template-columns: repeat(auto-fill, 95px);
 	gap: 15px;
+}
+
+.wrapper_6 > .item_5 {
+	/* Занимает с предпоследней по последнюю линию */
+	grid-column: auto / -1;
+}
+
+.wrapper_7 {
+	display: grid;
+	/* auto-fit - подбирает кол-во grid-линий под кол-во контента (адаптив) */
+	/* minmax - минимально/максимально доступное пространство одной линии (адаптив) */
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 15px;
+
+	/* Альтернатива при фиксированном значении */
+	/* grid-template-columns: auto 100px 100px 100px; */
+}
+
+.wrapper_7 > .item_1 {
+	/* Положение элемента в сетке (полезно при мобильном разрешении перенести элемент на его логичное место) */
+	order: 2;
+}
+.wrapper_7 > .item_2 {
+	order: 1;
+}
+
+.wrapper_8 {
+	display: grid;
+	/* auto-fit - подбирает кол-во grid-линий под кол-во контента (адаптив) */
+	/* minmax - минимально/максимально доступное пространство одной линии (адаптив) */
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 15px;
+}
+
+.wrapper_9 {
+	display: grid;
+	/* auto-fit - подбирает кол-во grid-линий под кол-во контента (адаптив) */
+	/* minmax - минимально/максимально доступное пространство одной линии (адаптив) */
+	grid-template-columns: 100px;
+	grid-template-rows: repeat(3, 100px);
+	gap: 15px;
+
+	/* Действует на grid контейнер */
+
+	/* Позиционирование айтемов по горизонтали внутри grid-сетки  */
+	/* stretch - по умолчанию */
+	justify-items: center;
+	/* Позиционирование айтемов по вертикали внутри grid-сетки  */
+	align-items: center;
+
+	/* Позиционирование всей сетки по горизонтали (весь контент)*/
+	justify-content: end;
+}
+
+.wrapper_9 > .item_3 {
+	/* Позиционирование grid элемента / переопределение конкретного айтема */
+	justify-self: end;
+	align-self: center;
+}
+
+.wrapper_10 {
+	display: grid;
+	grid-template-columns: repeat(5, 100px);
+	gap: 5px;
+	/* Заполнение пустых ячеек/дырок grid-сетки */
+	grid-auto-flow: dense;
+}
+
+.wrapper_10 > .item_3 {
+	grid-column: 4 / -1;
+}
+
+.wrapper_10 > .item_6 {
+	grid-column: 2 / 5;
+}
+
+.wrapper_10 > .item_9 {
+	grid-column: 3 / -1;
+}
+
+.wrapper_11 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 5px;
+	grid-template-areas:
+		'header header header header'
+		'sidebar content content content'
+		'footer footer footer footer';
+}
+
+.header {
+	grid-area: header;
+}
+
+.sidebar {
+	grid-area: sidebar;
+}
+
+.content {
+	grid-area: content;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+@media (max-width: 900px) {
+	.wrapper_11 {
+		grid-template-areas:
+			'header header header header'
+			'content content sidebar sidebar'
+			'footer footer footer footer';
+	}
+}
+
+@media (max-width: 500px) {
+	.wrapper_11 {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'header'
+			'sidebar'
+			'content'
+			'footer';
+	}
 }
