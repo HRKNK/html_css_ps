@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-primary: #6c38cc;
+	--violet: #6c38cc;
+	--color-bg: #16171d;
+	--gray-dark: #1e1f29;
+	--gray-stroke: #4d5064;
+	--grad-1: linear-gradient(158deg, #d77be5 0%, #be63e5 34.69%, #6c38cc 100%);
+}
+
+body {
+	margin: 0;
+	font-family: 'Fira Sans', sans-serif;
+	background-color: var(--color-bg);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- Методология БЭМ -->
+
+		<!-- БЛОК -->
+		<section class="section-header">
+			<!-- ЭЛЕМЕНТ БЛОКА // двойное подчеркивание -->
+			<div class="section-header__top"></div>
+			<h2 class="section-header__р2"></h2>
+			<!-- Это тоже ЭЛЕМЕНТ БЛОКА (вложенный) -->
+			<div class="section-header__div">
+				<p class="section-header__p">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus officiis nam ratione iure sunt, aperiam eligendi! Recusandae totam
+					nesciunt iure nihil.
+				</p>
+			</div>
+		</section>
+
+		<!-- БЛОК -->
+		<!-- МОДИФИКАЦИЯ // ординарное подчеркивание -->
+		<button class="button button_primary"></button>
+
+		<!-- БЛОК -->
+		<div class="hero">
+			<!-- ЭЛЕМЕНТ БЛОКА + МОДИФИКАЦИЯ + БЛОК (микс блока с элементом) -->
+			<!-- Допустим hero_button добавляет отступ для блока button -->
+			<button class="hero_button button button_primary"></button>
+			<button class="hero_button button button_primary"></button>
+		</div>
+	</body>
+</html>

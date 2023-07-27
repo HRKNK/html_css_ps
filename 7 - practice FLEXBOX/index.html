@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/styles/global.css" />
+		<link rel="stylesheet" href="./assets/styles/header.css" />
+		<link rel="stylesheet" href="./assets/styles/page.css" />
+		<link rel="stylesheet" href="./assets/styles/footer.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet" />
+		<title>Flex Box</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__navigate">
+					<img class="header__image" src="./assets/images/logo_header.svg" alt="logo image" title="Logo" />
+					<nav class="header__nav">
+						<ul class="header__ul">
+							<li class="header__li li_selected">Курсы</li>
+							<li class="header__li">О школе</li>
+							<li class="header__li">Блог</li>
+							<li class="header__li li_ghost">База знаний</li>
+						</ul>
+					</nav>
+					<button type="button" class="header__login_button">Вход</button>
+				</div>
+
+				<section class="header__section">
+					<div>
+						<h1 class="header__h1">
+							Доступные курсы по <br />
+							<span>Разработке и DevOps</span>
+						</h1>
+						<button class="header__button button_primary" type="button">Выбрать курс</button>
+						<button class="header__button button_ghost" type="button">О школе</button>
+					</div>
+					<div class="header__intro">
+						<img src="./assets/images/intro.jpg" alt="intro image" title="intro" />
+						<button class="header__button button_play">О школе</button>
+					</div>
+				</section>
+			</div>
+		</header>
+	</body>
+</html>
