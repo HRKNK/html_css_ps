@@ -11,8 +11,20 @@
 	--grad-1: linear-gradient(158deg, #d77be5 0%, #be63e5 34.69%, #6c38cc 100%);
 }
 
+/* Стили текста для инпутов и кнопок задаются браузером. 
+	Для явного наследования задается: */
+input, textarea, select, button {
+  font: inherit;
+}
+
 body {
-	margin: 0;
 	font-family: 'Fira Sans', sans-serif;
+	margin: 0;
 	background-color: var(--color-bg);
+	font-style: normal;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
 }
