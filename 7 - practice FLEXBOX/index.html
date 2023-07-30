@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./assets/styles/global.css" />
 		<link rel="stylesheet" href="./assets/styles/header.css" />
+		<link rel="stylesheet" href="./assets/styles/components.css" />
 		<link rel="stylesheet" href="./assets/styles/page.css" />
 		<link rel="stylesheet" href="./assets/styles/footer.css" />
 
@@ -29,22 +30,25 @@
 					<button type="button" class="header__login_button">Вход</button>
 					<button type="button" class="header__burger-button"></button>
 				</div>
-
-				<section class="header__section">
-					<div>
-						<h1 class="header__h1">
-							Доступные курсы по <br />
-							<span>Разработке и DevOps</span>
-						</h1>
-						<button class="header__button button_primary" type="button">Выбрать курс</button>
-						<button class="header__button button_ghost" type="button">О школе</button>
-					</div>
-					<div class="header__intro">
-						<img src="./assets/images/intro.jpg" alt="intro image" title="intro" />
-						<button class="header__button button_play">О школе</button>
-					</div>
-				</section>
 			</div>
 		</header>
+		<section class="section section_light">
+			<div class="hero">
+				<div class="hero__left">
+					<h1 class="hero__h1">
+						Доступные курсы по <br />
+						<span>Разработке и DevOps</span>
+					</h1>
+					<div class="hero__cta">
+						<button class="button button_primary" type="button">Выбрать курс</button>
+						<button class="button button_ghost" type="button">О школе</button>
+					</div>
+				</div>
+				<div class="hero__right">
+					<img src="./assets/images/intro.jpg" alt="intro image" title="intro" />
+					<button class="button button_play">О школе</button>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>

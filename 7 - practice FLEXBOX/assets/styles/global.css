@@ -9,6 +9,8 @@
 	--gray-dark: #1e1f29;
 	--gray-stroke: #4d5064;
 	--grad-1: linear-gradient(158deg, #d77be5 0%, #be63e5 34.69%, #6c38cc 100%);
+
+	--layout-width: 1172px;
 }
 
 /* Стили текста для инпутов и кнопок задаются браузером. 

@@ -1,0 +1,40 @@
+.section_light {
+    background-color: var(--gray-dark);
+}
+
+
+.button {
+	border: none;
+	background: none;
+	border-radius: 10px;
+	padding: 16px 32px;
+	color: #fafafa;
+    cursor: pointer;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+}
+
+.button_play {
+	background: var(--gray-dark, #1e1f29);
+	position: absolute;
+	top: 221px;
+	left: 68px;
+	padding-left: 63px;
+}
+.button_play::before {
+	content: url('../images/Play.svg');
+	position: absolute;
+	top: 15px;
+	left: 31px;
+}
+
+.button.button_primary {
+	background: var(--violet, #6c38cc);
+}
+
+.button.button_ghost {
+	border: 1px solid var(--gray-stroke, #4d5064);
+}
