@@ -1,7 +1,10 @@
-.section_light {
-    background-color: var(--gray-dark);
+.section_gray-dark {
+	background-color: var(--gray-dark);
 }
 
+.section_dark {
+	background-color: var(--color-bg);
+}
 
 .button {
 	border: none;
@@ -9,7 +12,7 @@
 	border-radius: 10px;
 	padding: 16px 32px;
 	color: #fafafa;
-    cursor: pointer;
+	cursor: pointer;
 	font-size: 18px;
 	text-align: center;
 	font-style: normal;
@@ -37,4 +40,87 @@
 
 .button.button_ghost {
 	border: 1px solid var(--gray-stroke, #4d5064);
+}
+
+.button.button_ghost:hover {
+	background-color: var(--gray-hover);
+}
+
+.social-icons {
+	display: flex;
+	gap: 24px;
+}
+
+.section-title {
+	padding-top: 100px;
+	font-style: normal;
+	font-weight: 400;
+}
+.section-title > h2 {
+	color: var(--color-white);
+	font-size: 46px;
+	margin: 0 0 32px;
+}
+.section-title > h3 {
+	color: var(--footer-pink);
+	font-size: 18px;
+	margin: 0 0 8px;
+}
+.section-title > h4 {
+	color: var(--color-white);
+	line-height: 150%;
+	font-size: 18px;
+	margin: 0 2px 32px;
+}
+
+.article {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	border-radius: 10px;
+	background-color: var(--gray-dark);
+	color: var(--color-white);
+	padding: 33px 32px;
+	margin-bottom: 36px;
+}
+.article__left {
+	max-width: 775px;
+}
+.article__right > button {
+	width: 158px;
+	height: 58px;
+}
+.article__info {
+	color: var(--color-gray);
+	display: flex;
+	gap: 32px;
+	margin: 0 0 14.5px;
+}
+.article__title {
+	margin: 0 0 12px;
+	font-size: 24px;
+	font-weight: 700;
+}
+.article__paragraph {
+	line-height: 150%;
+	font-size: 16px;
+}
+
+.article__date,
+.article__views {
+	position: relative;
+}
+
+.article__date::before {
+	position: relative;
+	top: 6px;
+	margin-right: 6px;
+	content: url('../images/Calendar.svg');
+}
+.article__views::before {
+	position: relative;
+	top: 6px;
+	margin-right: 6px;
+	content: url('../images/Eye.svg');
 }

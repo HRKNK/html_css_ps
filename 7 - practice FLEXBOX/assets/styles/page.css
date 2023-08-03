@@ -1,5 +1,5 @@
 .hero {
-    max-width: var(--layout-width);
+	max-width: var(--layout-width);
 	margin: 0 auto;
 	padding: 0 24px;
 	justify-content: space-between;
@@ -33,6 +33,32 @@
 }
 
 .hero__cta {
-    display: flex;
-    gap: 32px;
+	display: flex;
+	gap: 32px;
+}
+
+@media (max-width: 960px) {
+	.hero__h1 {
+		font-size: 30px;
+	}
+	.hero {
+		flex-direction: column;
+		padding: 0 24px;
+	}
+}
+
+.blog__wrapper {
+	max-width: var(--layout-width);
+	margin: 0 auto;
+	padding: 0 24px;
+	flex-direction: column;
+	display: flex;
+}
+.blog__button-all-article {
+	display: flex;
+	justify-content: center;
+	margin: 12px 0 100px;
+}
+.blog__social {
+	margin: 0 0 48px;
 }

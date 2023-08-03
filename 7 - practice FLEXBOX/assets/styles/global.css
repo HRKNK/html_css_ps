@@ -3,20 +3,36 @@
 }
 
 :root {
-	--color-primary: #6c38cc;
 	--violet: #6c38cc;
+	--color-primary: #6c38cc;
+	--color-white: #fafafa;
 	--color-bg: #16171d;
+	--color-gray: #afb2bf;
+
+	--gray-hover: #2e2d3d;
 	--gray-dark: #1e1f29;
 	--gray-stroke: #4d5064;
 	--grad-1: linear-gradient(158deg, #d77be5 0%, #be63e5 34.69%, #6c38cc 100%);
+
+	--footer-color: #101114;
+	--footer-pink: #e47ad5;
 
 	--layout-width: 1172px;
 }
 
 /* Стили текста для инпутов и кнопок задаются браузером. 
-	Для явного наследования задается: */
-input, textarea, select, button {
-  font: inherit;
+	Для явного наследования: */
+input,
+textarea,
+select,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font: inherit;
 }
 
 body {
@@ -25,6 +41,10 @@ body {
 	background-color: var(--color-bg);
 	font-style: normal;
 	font-weight: 400;
+}
+
+p {
+	margin: 0;
 }
 
 a {

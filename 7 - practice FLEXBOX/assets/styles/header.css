@@ -67,7 +67,7 @@
 	padding: 8px 16px;
 }
 
-.menu__item:hover > a, 
+.menu__item:hover > a,
 .header__login_button:hover {
 	color: #afb2bf;
 }
@@ -82,7 +82,6 @@
 		display: none;
 	}
 }
-
 
 header li,
 header button {
