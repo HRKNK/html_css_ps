@@ -81,6 +81,12 @@
 	.menu {
 		display: none;
 	}
+	.header__navigate {
+		margin-bottom: 0;
+	}
+	.header__wrapper {
+		padding: 30px 24px;
+	}
 }
 
 header li,
