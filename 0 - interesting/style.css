@@ -1,0 +1,90 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	/* Тип скролла: мягкий */
+	scroll-behavior: smooth;
+}
+
+body {
+	max-width: 1172px;
+	background-color: #16171d;
+	margin: 0 auto;
+
+	flex-direction: column;
+	display: flex;
+
+	gap: 15px;
+
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	padding: 140px 24px;
+}
+
+h1,
+p {
+	color: white;
+}
+
+.galery {
+	justify-content: space-between;
+	display: flex;
+	padding-bottom: 15px;
+	gap: 15px;
+	/* Скрыть часть контента */
+	overflow: hidden;
+	/* Скролл по x */
+	overflow-x: scroll;
+	/* Ширина галереи */
+	/* width: 1124px; */
+
+	/* Тип скролла: ось поведение */
+	scroll-snap-type: x mandatory;
+}
+
+.card {
+	background-color: #4d5064;
+	border-radius: 9px;
+	padding: 20px;
+	/* Минимальная ширина карточки */
+	min-width: 500px;
+	max-width: 1124px;
+	min-height: 215px;
+
+	/* Ширина галереи должна быть идентична ширине карточки для center свой-ва*/
+	/* Как скролл прилипает (для scroll-snap-type) */
+	scroll-snap-align: start;
+}
+
+.resizable {
+	overflow: auto;
+	/* Изменение размера блока по x/y */
+	resize: both;
+	max-height: 215px;
+}
+
+.scroll {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 15px;
+}
+
+.scroll > :nth-child(1) {
+	grid-row: span 2;
+}
+
+/* Переворот карточки */
+.flip {
+	transform: scale(-1);
+}
+
+.fixed {
+	position: fixed;
+	top: 30px;
+	font-weight: 700;
+	color: white;
+	transform: rotate(-90deg);
+
+	/* смешивание цвета: difference - разница между цветами */
+	mix-blend-mode: difference;
+}

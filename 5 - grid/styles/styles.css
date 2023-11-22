@@ -37,19 +37,20 @@ body > div {
 
 .wrapper {
 	display: grid;
-	/* Шаблон */
+	/* ШАБЛОН */
 	/* Шаблон колонки | ширина каждой колонки */
 	grid-template-columns: 200px 100px;
 	/* Шаблон строки | высота каждой строки */
 	grid-template-rows: 120px 80px 60px;
 
-	/* Поведение перетекания */
-	/* По колонкам */
+	/* Поведение перетекания|поток */
+	/* По колонкам|остаточные элементы пойдут колонкой (row - по умолчанию) */
 	grid-auto-flow: column;
 
-	/* Вне шаблона */
+	/* ВНЕ ШАБЛОНА */
 	/* Высота каждой строки */
 	grid-auto-rows: 100px;
+
 	/* Отступы между grid-айтемами */
 	gap: 15px;
 }
@@ -89,8 +90,8 @@ body > div {
 	/* Шаблон */
 	/* Шаблон колонок|ширина (фиксированный) */
 	/* grid-template-columns: 1fr 2fr 1fr; */
-	grid-template-columns: repeat(3, 2fr);
-	grid-template-rows: repeat(3 1fr);
+	grid-template-columns: repeat(3, 2fr); /* grid-template-columns: repeat(3, 1fr) auto; */
+	grid-template-rows: repeat(3, 1fr);
 
 	/* Отступы между grid-айтемами */
 	gap: 15px;
